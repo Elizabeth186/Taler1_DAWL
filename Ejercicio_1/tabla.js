@@ -24,6 +24,7 @@ for (i= 0; i< F; i++) {
 
 document.write("</table>");
 document.getElementById('dato').innerHTML = aleatorio;
+document.write(eli);
 }
 } 
 
