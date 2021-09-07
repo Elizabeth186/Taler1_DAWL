@@ -1,0 +1,13 @@
+body{
+    background-color: whitesmoke;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    float: left;
+    width: 15em;
+}
+

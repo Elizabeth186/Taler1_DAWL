@@ -1,33 +1,47 @@
-function aleatorio(minimo, maximo){
-    return Math.floor(Math.random() * (maximo - minimo + 1)+minimo);
+  
+function mostrar(minimo, maximo){
+    return Math.floor(Math.random() * (maximo - minimo + 1)+minimo);    
 } 
-for (i = 0; i <=100 ; ++i) {
- 
-function generando() {   
-    var i,j    
+
     
-var F =  parseInt(document.getElementById('filas').value);
-var c = parseInt(document.getElementById('columnas').value);
-res = Math.floor((Math.random()*(99+1)));
-document.write("<table border>");
-for (i= 0; i< F; i++) {
-    document.write("<tr>");
-    for (j= 0; j < c; j++) {  
-        document.write("<td>");
-        document.write(aleatorio(1, 99));
+function crear_matriz() {   
+        var i,j    
         
-        document.write("</td>");
-
+    var f = parseInt(document.getElementById('filas').value);
+    var c = parseInt(document.getElementById('columnas').value);
+    document.write("<table border id='write'>");
+    for (i= 0; i< f; i++) {
+        document.write("<tr>");
+        for (j= 0; j < c; j++) {  
+            document.write("<td>");
+            document.write(aleatorio(1, 99));
+            
+            document.write("</td>");
+        }
+        document.write("</tr>");   
     }
-    document.write("</tr>");
+    document.write("</table>");
+    document.getElementById("aqui");
+    document.write("<button onclick='recorrer()'>Mostrar</button>")
 }
 
-document.write("</table>");
-document.getElementById('dato').innerHTML = aleatorio;
-document.write(eli);
-}
-} 
-
+function recorrer() {   
+    var resume_table = document.getElementById("write");
     
+    var min = 100;
+    var max = 0;
+    for (var i = 0, row; row = resume_table.rows[i]; i++) {
+    
+        for (var j = 0, col; col = row.cells[j]; j++) {
+            if (parseInt(col.innerText) > max) {
+                max = parseInt(col.innerText);
+            }
+            if (parseInt(col.innerText) < min) {
+                min = parseInt(col.innerText);
+            }
+        }
+    }
 
-
+    document.write("<h5>" , 'Numero mayor: ', max , "</h5>");
+    document.write("<h5>" , 'Numero menor: ', min , "</h5>");
+}

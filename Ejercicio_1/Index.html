@@ -4,19 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tabla.css" >
     <script src="tabla.js"></script>
     <title>Generador de tablas</title>
 </head>
 <body>
 <div>
-    <form action="#">
-     <input type="text" id="filas" placeholder="filas"> 
- <input type="text" id="columnas" placeholder="columnas"> 
-   <button id="boton" onclick="generando()">Generar</button>
+    <form action="#" id="orientacion">
+       <ul><li> <p>Ingresa la dimesion de su matriz</p></li></ul>
+   <ul><li><input type="text" id="filas" placeholder="filas"></li></ul>   
+ <ul><li><input type="text" id="columnas" placeholder="columnas"> </li></ul>
+   <ul><li><button id="boton" onclick="crear_matriz()">Crear</button></li></ul>
    </form>
 </div>
-    <div>
+
+    <div id="aqui">
         <table id="write">
+            <tbody id = "dato">
+                <tr>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <div id="aqui1">
+        <table id="write1">
             <tbody id = "dato">
                 <tr>
                     <td></td>
