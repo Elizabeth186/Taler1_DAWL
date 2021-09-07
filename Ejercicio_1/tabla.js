@@ -14,7 +14,7 @@ function crear_matriz() {
         document.write("<tr>");
         for (j= 0; j < c; j++) {  
             document.write("<td>");
-            document.write(aleatorio(1, 99));
+            document.write(mostrar(1, 99));
             
             document.write("</td>");
         }
