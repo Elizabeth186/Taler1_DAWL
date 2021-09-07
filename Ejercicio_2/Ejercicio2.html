@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/Ejercicio2.css">
+    <script src="js/Ejercicio2.js"></script>
+    <title>Libros</title>
+</head>
+
+<body class="container">
+    <header class="menu">
+        <div id="logo"><a href=""></a></div>
+        <h4><img src="img/formulario.png" alt="logo.png" width="40px" height="40px">Libros</h4>
+    </header>
+    <form action="#">
+        <h6>Libro ID:<input class="formulario" type="text" placeholder="(Nuevo)" name="" id="txtid"></h6>
+        <h6>Titulo: <input class="form" type="text" placeholder="" name="" id="txttitulo"></h6>
+        <h6>Nombre Autor: <input class="form" type="text" placeholder="" name="" id="txtnombre"></h6>
+        <h6>Apellido Autor: <input class="form" type="text" placeholder="" name="" id="txtapellido"></h6>
+        <h6>Categoria: <input class="form" type="text" placeholder="" name="" id="txtcategoria"></h6>
+        <h6>Precio: <input class="formulario" type="text" placeholder="" name="" id="txtprecio"></h6>
+        <br>
+        <br>
+        <br>
+    </form>
+    <h5>Imagen:</h5>
+    <section>
+        <p class="texto">Elige el archivo a subir: </p>
+        <input class="archivo" type="file" placeholder="imagen" name="" id="imagen">
+        <input class="btnboton" type="button" value="Subir Archivo" onclick="registrar_libro()">
+    </section>
+    <div>
+        <table id="datos" class="tabla">
+            <tr>
+
+            </tr>
+            <tbody id="libros"></tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>
