@@ -22,10 +22,10 @@ function crear_matriz() {
     }
     document.write("</table>");
     document.getElementById("aqui");
-    document.write("<button onclick='recorrer()'>Mostrar</button>")
-}
+    
 
-function recorrer() {   
+
+  
     var resume_table = document.getElementById("write");
     
     var min = 100;
