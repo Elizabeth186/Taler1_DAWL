@@ -53,3 +53,11 @@ h6, h5{
 td, tr{
     color: #000;
 }
+#preview{
+    width: 10em;
+    height: 10em;
+}
+#preview img{
+    width: 10em;
+    height: 10em;
+}

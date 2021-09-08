@@ -19,11 +19,22 @@ function datoslibros(){
     for (var casilla in registro){
         
         fila+="<tr><td>"
+        document.getElementById("imagen").onchange = function(e){
+            let reader = new FileReader();
+            reader.readAsDataURL(e.target.files[0]);
+            reader.onload = function(){
+                let preview = document.getElementById('preview'),
+                image = document.createElement('img');
+                image.src = reader.result;
+                preview.innerHTML = '';
+                preview.append(image);
+            };
+        }
         fila+="<br>"+registro[casilla].imagen;
         fila+="<tr><td>"+"Titulo: "+"<b>"+registro[casilla].titulo+"<b>"+"</td>"
         fila+="<tr><td>"+"Autor: "+registro[casilla].nombre+" "+registro[casilla].apellido+"</td>"
         fila+="<tr><td>"+"Precio: "+"$"+registro[casilla].precio+"</td><td>"
-        fila+="<br></td><tr>"
+        fila+="<br></td><td>"
     }
     document.getElementById('libros').innerHTML=fila;
 }
