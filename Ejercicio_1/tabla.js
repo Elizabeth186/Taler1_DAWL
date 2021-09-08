@@ -42,6 +42,6 @@ function crear_matriz() {
         }
     }
 
-    document.write("<h5>" , 'Numero mayor: ', max , "</h5>");
-    document.write("<h5>" , 'Numero menor: ', min , "</h5>");
+    document.write("<h2>" , 'Numero mayor: ', max , "</h2>");
+    document.write("<h2>" , 'Numero menor: ', min , "</h2>");
 }

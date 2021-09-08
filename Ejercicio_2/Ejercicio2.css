@@ -50,3 +50,6 @@ h6, h5{
     color: #FFF;
     border: none;
 }
+td, tr{
+    color: #000;
+}

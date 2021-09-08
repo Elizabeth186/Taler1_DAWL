@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="tabla.css" >
     <script src="tabla.js"></script>
     <title>Generador de tablas</title>
 </head>
-<body>
+<body class="contenedor">
+    <header class="menu">
+        <img src="img/archivojs.png" alt="js.png" width="70px" height="70px"><h2>Ejercicio 1: Numero Mayor</h2>
+    </header>
 <div>
     <form action="#" id="orientacion">
-        <p>Ingresa la dimesion de su matriz</p>
-   <input type="text" id="filas" placeholder="filas">   
- <input type="text" id="columnas" placeholder="columnas"> 
-   <button id="boton" onclick="crear_matriz()">Crear</button>
+        <h6>Ingrese dimension de matriz <input type="text" id="filas" placeholder="filas"> <input type="text" id="columnas" placeholder="columnas"> <button id="boton" onclick="crear_matriz()">Crear</button></h6>    
    </form>
 </div>
 

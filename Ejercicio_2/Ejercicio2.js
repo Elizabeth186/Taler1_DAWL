@@ -17,12 +17,13 @@ function registrar_libro(){
 function datoslibros(){
     fila = "";
     for (var casilla in registro){
-        fila+="<tr>"
-        fila+="<td>"+registro[casilla].imagen+"</td>"
-        fila+="<tr>"+registro[casilla].titulo+"</tr>"
-        fila+="<td>"+registro[casilla].nombre+registro[casilla].apellido+"</td>"
-        fila+="<tr>"+registro[casilla].precio+"</tr>"
-        fila+="</tr>"
+        
+        fila+="<tr><td>"
+        fila+="<br>"+registro[casilla].imagen;
+        fila+="<tr><td>"+"Titulo: "+"<b>"+registro[casilla].titulo+"<b>"+"</td>"
+        fila+="<tr><td>"+"Autor: "+registro[casilla].nombre+" "+registro[casilla].apellido+"</td>"
+        fila+="<tr><td>"+"Precio: "+"$"+registro[casilla].precio+"</td><td>"
+        fila+="<br></td><tr>"
     }
     document.getElementById('libros').innerHTML=fila;
 }

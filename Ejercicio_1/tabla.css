@@ -1,7 +1,26 @@
-body{
-    background-color: whitesmoke;
+.menu{
+    border:inherit ;
+    margin: 20px;
+    background-color:#F5F5F5 ;
+    height: 110px;
 }
+img{
+    margin: 10px;
+}
+h2{
+    float:right;
+}
+.contenedor{
+    color: #1565C0;
+}
+#orientacion{
+    text-align: center;
+}
+#boton{
+    border-style:groove;
+    border-radius: 3px;
 
+}
 ul{
     list-style-type: none;
 }
